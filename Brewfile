@@ -1,0 +1,8 @@
+brew "gh"
+brew "neovim"
+cask "font-bricolage-grotesque"
+cask "font-daddy-time-mono-nerd-font"
+cask "ghostty"
+cask "openkey"
+cask "rectangle"
+cask "zen"
