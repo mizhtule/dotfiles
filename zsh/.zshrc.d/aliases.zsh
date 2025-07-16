@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-alias ll='ls -lh'
-alias ls='ls -lh'
-alias la='ls -lAh'
-alias ldot='ls -ld .*'
+alias ls='ls -lhG'
+alias ll='ls -lhG'
+alias la='ls -lAhG'
+alias ldot='ls -ldG .*'
 
