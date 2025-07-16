@@ -3,3 +3,7 @@
 # Prompt
 romkatv/powerlevel10k
 
+# Some Fish-like features
+zdharma-continuum/fast-syntax-highlighting
+zsh-users/zsh-autosuggestions
+
