@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Completions
+mattmc3/ez-compinit
+zsh-users/zsh-completions kind:fpath path:src
+
 # Prompt
 romkatv/powerlevel10k
 
