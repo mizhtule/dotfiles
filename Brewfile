@@ -1,4 +1,5 @@
 brew "colima"
+brew "docker"
 brew "gh"
 brew "neovim"
 cask "alfred"
