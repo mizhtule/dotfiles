@@ -1,3 +1,4 @@
+brew "colima"
 brew "gh"
 brew "neovim"
 cask "alfred"
