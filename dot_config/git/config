@@ -1,0 +1,38 @@
+[alias]
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	# View the current working tree status using the short format
+	s = status -s
+
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+[core]
+	trustctime = false
+	editor = nvim
+
+[color]
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
+
+[push]
+	# Change to maching for machines with older versions of git 1.x.x
+	default = simple
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[user]
+	name = Lê Minh Tú
+	email = mizhtule@gmail.com
+
+[github]
+	user = mizhtule
+
+[init]
+	defaultBranch = main
