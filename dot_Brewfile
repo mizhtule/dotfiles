@@ -1,5 +1,6 @@
 brew "chezmoi"
 brew "colima"
+brew "direnv"
 brew "docker"
 brew "gh"
 brew "k9s"
