@@ -2,7 +2,6 @@
 
 (( $+commands[pyenv] )) || return 1
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -d "$(pyenv root)/bin" ]] && export PATH="$(pyenv root)/bin:${PATH}"
 
 eval "$(pyenv init - zsh)"
