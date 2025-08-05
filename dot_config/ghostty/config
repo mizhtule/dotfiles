@@ -2,5 +2,5 @@ font-family = DaddyTimeMono Nerd Font Mono
 theme = catppuccin-mocha
 window-title-font-family = DaddyTimeMono Nerd Font Mono
 font-thicken = true
-font-size = 11.5
+font-size = 12
 cursor-style = bar
