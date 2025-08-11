@@ -7,8 +7,12 @@ brew "gh"
 brew "jenv"
 brew "k9s"
 brew "kcat"
+
+{{- if eq .chezmoi.hostname "OM-tulm1-M1"}}
 brew "kubernetes-cli"
 brew "kubectx"
+{{ end -}}
+
 brew "neovim"
 brew "openjdk"
 brew "pyenv"
@@ -25,7 +29,11 @@ cask "font-daddy-time-mono-nerd-font"
 cask "font-google-sans-code"
 cask "font-sf-mono"
 cask "ghostty"
+
+{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
 cask "intellij-idea"
+{{ end -}}
+
 cask "megasync"
 cask "obsidian"
 cask "openkey"
