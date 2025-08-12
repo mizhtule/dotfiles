@@ -1,8 +1,11 @@
 #!/usr/bin/env zsh
 
-alias ls='ls -lhG'
-alias ll='ls -lhG'
-alias la='ls -lAhG'
-alias l='ls -lAhG'
-alias ldot='ls -ldG .*'
-alias l.='ls -ldG .*'
+alias ls='ls --color=always -l'
+
+(( $+commands[eza] )) && alias ls='eza -l --icons=auto'
+
+alias ll='ls'
+alias la='ls -a'
+alias l='ls -a'
+alias ldot='ls -d .*'
+alias l.='ldot'
