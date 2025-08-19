@@ -1,0 +1,12 @@
+{{- $work := false -}}
+{{- $personal := false -}}
+
+{{- if eq .chezmoi.hostname "OM-tulm1-M1" -}}
+{{- $work = true -}}
+{{- else if eq .chezmoi.hostname "Mac-mini-M4" -}}
+{{- $personal = true -}}
+{{- end -}}
+
+[data]
+    work = {{ $work }}
+    personal = {{ $personal }}
