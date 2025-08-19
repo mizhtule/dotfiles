@@ -6,9 +6,11 @@ brew "docker-compose"
 brew "eza"
 brew "gh"
 brew "jenv"
-brew "kcat"
 {{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
 brew "k9s"
+{{ end }}
+brew "kcat"
+{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
 brew "kubernetes-cli"
 brew "kubectx"
 {{ end }}
