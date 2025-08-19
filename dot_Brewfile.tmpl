@@ -6,14 +6,10 @@ brew "docker-compose"
 brew "eza"
 brew "gh"
 brew "jenv"
-{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
-brew "k9s"
-{{ end }}
+{{ if eq .chezmoi.hostname "OM-tulm1-M1" }}brew "k9s"{{ end }}
 brew "kcat"
-{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
-brew "kubernetes-cli"
-brew "kubectx"
-{{ end }}
+{{ if eq .chezmoi.hostname "OM-tulm1-M1" }}brew "kubernetes-cli"{{ end }}
+{{ if eq .chezmoi.hostname "OM-tulm1-M1" }}brew "kubectx"{{ end }}
 brew "neovim"
 brew "openjdk"
 brew "pyenv"
@@ -24,9 +20,7 @@ brew "wget"
 brew "yamlfmt"
 cask "alfred"
 cask "appcleaner"
-{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
-cask "calibre"
-{{ end }}
+{{ if eq .chezmoi.hostname "OM-tulm1-M1" }}cask "calibre"{{ end }}
 cask "datagrip"
 cask "font-bricolage-grotesque"
 cask "font-daddy-time-mono-nerd-font"
@@ -34,9 +28,7 @@ cask "font-google-sans-code"
 cask "font-maple-mono"
 cask "font-sf-mono"
 cask "ghostty"
-{{- if eq .chezmoi.hostname "OM-tulm1-M1" }}
-cask "intellij-idea"
-{{ end }}
+{{ if eq .chezmoi.hostname "OM-tulm1-M1" }}cask "intellij-idea"{{ end }}
 cask "megasync"
 cask "obsidian"
 cask "openkey"
