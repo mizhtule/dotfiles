@@ -5,6 +5,7 @@ brew "docker"
 brew "docker-compose"
 brew "eza"
 brew "gh"
+brew "go"
 brew "jenv"
 {{ if .work }}brew "k9s"{{ end }}
 brew "kcat"
@@ -20,6 +21,7 @@ brew "wget"
 brew "yamlfmt"
 cask "alfred"
 cask "appcleaner"
+{{ if .personal }}cask "cloudflare-warp"{{ end }}
 {{ if .work }}cask "calibre"{{ end }}
 cask "datagrip"
 cask "font-bricolage-grotesque"
@@ -34,6 +36,7 @@ cask "obsidian"
 cask "openkey"
 cask "rectangle"
 cask "shottr"
+{{ if .personal }}cask "steam"{{ end }}
 cask "visual-studio-code"
 cask "zen"
 vscode "bluebrown.yamlfmt"
