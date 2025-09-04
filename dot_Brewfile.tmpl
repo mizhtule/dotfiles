@@ -6,7 +6,7 @@ brew "docker-compose"
 brew "eza"
 brew "gh"
 brew "go"
-brew "haskell-stack"
+{{ if .work }}brew "haskell-stack"{{ end }}
 brew "jenv"
 {{ if .work }}brew "k9s"{{ end }}
 brew "kcat"
@@ -22,9 +22,11 @@ brew "wget"
 brew "yamlfmt"
 cask "alfred"
 cask "appcleaner"
+cask "betterdiscord-installer"
 {{ if .personal }}cask "cloudflare-warp"{{ end }}
 {{ if .work }}cask "calibre"{{ end }}
 cask "datagrip"
+cask "discord"
 {{ if .work }}cask "espanso"{{ end }}
 cask "font-bricolage-grotesque"
 cask "font-daddy-time-mono-nerd-font"
