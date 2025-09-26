@@ -1,3 +1,4 @@
+{{ if .work }}tap "airbytehq/tap"{{ end }}
 brew "chezmoi"
 brew "colima"
 brew "direnv"
@@ -20,6 +21,7 @@ brew "telnet"
 brew "uv"
 brew "wget"
 brew "yamlfmt"
+{{ if .work }}brew "airbytehq/tap/abctl"{{ end }}
 cask "alfred"
 cask "appcleaner"
 cask "betterdiscord-installer"
@@ -27,6 +29,7 @@ cask "betterdiscord-installer"
 {{ if .work }}cask "calibre"{{ end }}
 cask "datagrip"
 cask "discord"
+cask "displaperture"
 {{ if .work }}cask "espanso"{{ end }}
 cask "font-bricolage-grotesque"
 cask "font-daddy-time-mono-nerd-font"
@@ -34,6 +37,7 @@ cask "font-google-sans-code"
 cask "font-maple-mono"
 cask "font-sf-mono"
 cask "ghostty"
+cask "goland"
 {{ if .work }}cask "intellij-idea"{{ end }}
 cask "megasync"
 cask "obsidian"
