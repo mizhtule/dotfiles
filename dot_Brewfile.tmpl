@@ -3,6 +3,7 @@ brew "chezmoi"
 brew "colima"
 brew "direnv"
 brew "docker"
+brew "docker-clean"
 brew "docker-compose"
 brew "eza"
 brew "gh"
@@ -13,8 +14,10 @@ brew "jenv"
 brew "kcat"
 {{ if .work }}brew "kubernetes-cli"{{ end }}
 {{ if .work }}brew "kubectx"{{ end }}
+{{ if .work }}brew "mysql-client"{{ end }}
 brew "neovim"
 brew "openjdk"
+brew "pkgconf"
 brew "pyenv"
 brew "shfmt"
 brew "telnet"
