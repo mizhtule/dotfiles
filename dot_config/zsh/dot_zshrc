@@ -1,5 +1,9 @@
 #!/usr/bin/env zsh
 
+# Profiling
+[[ "$ZPROFRC" -ne 1 ]] || zmodload zsh/zprof
+alias zprofrc="ZPROFRC=1 zsh"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of .zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -33,3 +37,8 @@ unset _rc
 # To customize prompt, run `p10k configure` or edit .p10k.zsh
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
 
+# Finish profiling by calling zprof
+[[ "$ZPROFRC" -eq 1 ]] && zprof
+[[ -v ZPROFRC ]] && unset ZPROFRC
+
+true
