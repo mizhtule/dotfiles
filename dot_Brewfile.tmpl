@@ -10,6 +10,7 @@ brew "gh"
 brew "go"
 {{ if .work }}brew "haskell-stack"{{ end }}
 brew "jenv"
+{{ if .work }}brew "k6"{{ end }}
 {{ if .work }}brew "k9s"{{ end }}
 brew "kcat"
 {{ if .work }}brew "kubernetes-cli"{{ end }}
@@ -23,6 +24,7 @@ brew "shfmt"
 brew "telnet"
 brew "uv"
 brew "wget"
+{{ if .work }}brew "xk6"{{ end }}
 brew "yamlfmt"
 {{ if .work }}brew "airbytehq/tap/abctl"{{ end }}
 cask "alfred"
