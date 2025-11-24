@@ -11,6 +11,7 @@ brew "gh"
 brew "go"
 {{ if .work }}brew "haskell-stack"{{ end }}
 brew "jenv"
+{{ if .work }}brew "jj"{{ end }}
 {{ if .work }}brew "k6"{{ end }}
 {{ if .work }}brew "k9s"{{ end }}
 brew "kcat"
@@ -21,9 +22,12 @@ brew "neovim"
 brew "openjdk"
 brew "pkgconf"
 brew "pyenv"
+{{ if .work }}brew "s3cmd"{{ end }}
 brew "shfmt"
 brew "telnet"
+{{ if .work }}brew "trivy"{{ end }}
 brew "uv"
+{{ if .work }}brew "vcluster"{{ end }}
 brew "wget"
 {{ if .work }}brew "xk6"{{ end }}
 brew "yamlfmt"
@@ -56,6 +60,7 @@ cask "rectangle"
 cask "shottr"
 cask "steam"
 cask "stremio"
+{{ if .work }}cask "termius"{{ end }}
 cask "visual-studio-code"
 cask "zen"
 vscode "bluebrown.yamlfmt"
