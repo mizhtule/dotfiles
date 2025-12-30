@@ -1,6 +1,6 @@
 {{ if .work }}tap "airbytehq/tap"{{ end }}
 brew "chezmoi"
-brew "colima"
+{{ if .work }}brew "colima"{{ end }}
 brew "direnv"
 brew "dive"
 brew "docker"
@@ -55,11 +55,11 @@ cask "megasync"
 {{ if .work }}cask "microsoft-remote-desktop"{{ end }}
 cask "obsidian"
 cask "openkey"
+{{ if .personal }}cask "orbstack"{{ end }}
 {{ if .work }}cask "pycharm"{{ end }}
 cask "rectangle"
 cask "shottr"
 cask "steam"
-cask "stremio"
 {{ if .work }}cask "termius"{{ end }}
 cask "visual-studio-code"
 cask "zen"
