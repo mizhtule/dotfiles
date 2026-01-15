@@ -55,6 +55,7 @@ cask "goland"
 cask "megasync"
 {{ if .work }}cask "microsoft-remote-desktop"{{ end }}
 cask "obsidian"
+{{ if .work}}cask "opencode-desktop"{{ end }}
 cask "openkey"
 {{ if .personal }}cask "orbstack"{{ end }}
 {{ if .work }}cask "pycharm"{{ end }}
@@ -70,6 +71,7 @@ vscode "catppuccin.catppuccin-vsc"
 vscode "ciarant.vscode-structurizr"
 vscode "degreat.fonted"
 vscode "foxundermoon.shell-format"
+{{ if .work }}vscode "humao.rest-client"{{ end }}
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
