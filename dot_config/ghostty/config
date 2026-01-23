@@ -4,3 +4,4 @@ window-title-font-family = DaddyTimeMono Nerd Font Mono
 font-thicken = true
 font-size = 12
 cursor-style = bar
+window-save-state = always
